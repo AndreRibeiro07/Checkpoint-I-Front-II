@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/formStyle.css">
+    <link rel="stylesheet" href="./css/popUp.css">
+    <title>Card Colection</title>
+    <!-- texto -->
+</head>
+
+<body>
+    <div class="general__container">
+
+        <div id="pop-up" class="pop-up"></div>
+        <div class="top__container">
+            <header>
+                <nav class="navegacao">
+                    <a href="#titulo-principal">Home</a>
+                    <a href="./equipe.html" target="_blank">Equipe</a>
+                </nav>
+            </header>
+            <main>
+                <h1 id="titulo-principal">Fórmula 1</h1>
+                <div class="container">
+
+                    <!-- formulário -->
+                    <form id="form-card" class="container__form">
+                        <div>
+                            <input type="text" name="titulo" id="titulo" placeholder="Título" maxlength="80">
+                        </div>
+                        <div>
+                            <input type="text" name="descricao" id="descricao" placeholder="Descrição" maxlength="500">
+                        </div>
+                        <div>
+                            <input type="text" name="urlImgCard" id="url-img-card" placeholder="Link da Imagem">
+                        </div>
+                        <button id="criar-card" class="container__form__btn-enviar">Enviar</button>
+                    </form>
+                </div>
+                <!-- btn abrir form -->
+                <div id="btn-abrir-form" class="btn-abrir-form">
+                    <p>Criar Card</p>
+                    <img src="./midias/PirelliF1.png"
+                        alt="">
+                </div>
+
+                <!-- seção de cards -->
+                <section id="secao-cards" class="section__cards">
+
+                    <article class="section__card  card__fixo-1">
+                        <div class="section__card__lixeira--disable">
+                            <input type="image" value="0" class="section__card__lixeira__img--disable"
+                                src="./midias/lixeira-de-reciclagem-tampa.png" alt="">
+                            <input type="image" value="0" class="section__card__lixeira__img--disable"
+                                src="./midias/lixeira-de-reciclagem-corpo.png" alt="">
+                        </div>
+                        <!-- img card -->
+                        <div id="imagem-card">
+                            <img class="imagem-card"
+                                src="./midias/Mercedes.jpeg"
+                                alt="imagem">
+                        </div>
+                        <div class="conteudo-card">
+                            <!-- título -->
+                            <div>
+                                <p>Mercedes-AMG</p>
+                            </div>
+                            <!-- descrição -->
+                            <div>
+                                <p class="section__paragrafo">A Mercedes-Benz, por meio de sua subsidiária Mercedes-Benz Grand Prix Limited, está atualmente envolvida na Fórmula 1 como equipe e construtor sob o nome Mercedes-AMG Petronas Formula One Team</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__card  card__fixo-2">
+                        <div class="section__card__lixeira--disable">
+                            <input type="image" value="1" class="section__card__lixeira__img--disable"
+                                src="./midias/lixeira-de-reciclagem-tampa.png" alt="">
+                            <input type="image" value="1" class="section__card__lixeira__img--disable"
+                                src="./midias/lixeira-de-reciclagem-corpo.png" alt="">
+                        </div>
+                        <!-- img card -->
+                        <div id="imagem-card">
+                            <img class="imagem-card"
+                                src="./midias/Red Bull.jpg"
+                                alt="imagem">
+                        </div>
+                        <div class="conteudo-card">
+                            <!-- título -->
+                            <div>
+                                <p>Red Bull Racing</p>
+                            </div>
+                            <!-- descrição -->
+                            <div>
+                                <p class="section__paragrafo">A Red Bull Racing, popularmente conhecida como Red Bull ou pela sua abreviação RBR e atualmente competindo como Red Bull Racing Honda, é uma equipe de automobilismo baseada no Reino Unido que compete no Campeonato Mundial de Fórmula 1 sob uma licença austríaca.</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+        <footer class="rodape">
+            <a href="#titulo-principal">Topo</a>
+        </footer>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
